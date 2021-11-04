@@ -6,7 +6,9 @@ using UnityEngine.Rendering;
 
 public class Ammunition : MonoBehaviour
 {
+    
     GameObject player1, player2;
+    
     Gun gunp1, gunp2;
     new AudioSource audio;
     new Renderer renderer;
@@ -15,11 +17,13 @@ public class Ammunition : MonoBehaviour
     void Start()
     {
         //gun = FindObjectOfType<Gun>();
+        
         player1 = GameObject.Find("TankTurret1");
         player2 = GameObject.Find("TankTurret2");
-
+        
         gunp1 = player1.GetComponent<Gun>();
         gunp2 = player2.GetComponent<Gun>();
+        
 
         audio = GetComponent<AudioSource>();
         renderer = GetComponent<Renderer>();
