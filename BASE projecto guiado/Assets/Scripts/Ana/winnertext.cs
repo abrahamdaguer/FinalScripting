@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class winnertext : MonoBehaviour
 {
-
+    /*
     GameObject player1, player2;
     PlayerController win1, win2;
+    */
     void Start()
     {
+        /*
         player1 = GameObject.Find("player1");
         player2 = GameObject.Find("player2");
 
@@ -18,16 +20,21 @@ public class winnertext : MonoBehaviour
 
         win2.winner.enabled = false;
         win1.winner.enabled = false;
+        */
+        GameMaster.Instance.p1.winner.enabled = false;
+        GameMaster.Instance.p2.winner.enabled = false;
     }
     void Update()
     {
-        if (win1.health ==0)
+        if (GameMaster.Instance.p1.health == 0)
         {
-            win2.winner.enabled = true;
+            GameMaster.Instance.p2.winner.enabled = true;
+            //win2.winner.enabled = true;
         }
-        else if (win2.health == 0)
+        else if (GameMaster.Instance.p2.health == 0)
         {
-            win1.winner.enabled = true;
+            GameMaster.Instance.p1.winner.enabled = true;
+            //win1.winner.enabled = true;
         }
     }
 }
