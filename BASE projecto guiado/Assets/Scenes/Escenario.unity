@@ -927,6 +927,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 557383173}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &557762792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557762794}
+  - component: {fileID: 557762793}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &557762793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557762792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64c179b5e0df084e8e7d7ede4e726f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 1696418800}
+  player2: {fileID: 1094356272}
+  p1: {fileID: 0}
+  p2: {fileID: 0}
+--- !u!4 &557762794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557762792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.5, y: 0.5664991, z: -20.373882}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609227239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,6 +2079,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3917888299066031255, guid: 073c51bf74781bd4f830fc739ecebaba,
     type: 3}
   m_PrefabInstance: {fileID: 1001325713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1094356272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7645734852803355090, guid: 1f49bc04cc899fb47ad0530b81aa1ee3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8582619757332266391}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1127867929
 PrefabInstance:
@@ -3172,6 +3225,12 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1696418800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8358478791816264993, guid: ebd87b020baf50a45abb83905580e574,
+    type: 3}
+  m_PrefabInstance: {fileID: 7998327284580026221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1902921004
 PrefabInstance:
   m_ObjectHideFlags: 0
