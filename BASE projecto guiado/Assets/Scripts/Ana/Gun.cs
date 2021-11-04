@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Ana
 {
-    public class Gun : MonoBehaviour
+    public class Gun : MonoBehaviour,Irotation
     {
         [SerializeField] float rotSpeed = 90;
         public float ammo = 0;
@@ -26,7 +26,7 @@ namespace Ana
             ps = GetComponentInChildren<ParticleSystem>();
             t = 1 / attackSpeed; //para que el primer ataque este disponible
         }
-        public void Rotate()
+        public void rotate()
         {
             Vector3 dirRot = new Vector3(0, 1, 0);
             Vector3 velocityRot = rotSpeed * dirRot * Input.GetAxis(horizontal);
@@ -60,6 +60,6 @@ namespace Ana
                 }
             }
         }
-        
+
     }
 }
