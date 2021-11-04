@@ -13,9 +13,9 @@ public class PlayerController : MonoBehaviour
     //public Irotation irotation;
     //Gun[] guns;
     Gun gun;
-    [SerializeField] Slider healthbar;
+    public Slider healthbar;
     
-    public void Hit(float force)
+    /*public void Hit(float force)
     {
         health -= force;
         healthbar.value = health;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }  
+    }  */
     void Start()
     {
         movement = GetComponent<Movement>();
