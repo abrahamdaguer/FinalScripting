@@ -20,6 +20,7 @@ namespace Maria
             motor = GetComponent<AudioSource>();
             lightL = transform.Find("LeftLight").GetComponent<Light>();
             lightR = transform.Find("RightLight").GetComponent<Light>();
+            rbody = GetComponent<Rigidbody>();
         }
 
         void Update()
@@ -42,7 +43,7 @@ namespace Maria
             Vector3 dirRot = new Vector3(0, 1, 0);
             Vector3 velocityRot = rotSpeed * dirRot * Input.GetAxis(horizontal);
             transform.eulerAngles += velocityRot * Time.deltaTime;
-            rbody = GetComponent<Rigidbody>();
+            
         }
 
         public void SetLights()

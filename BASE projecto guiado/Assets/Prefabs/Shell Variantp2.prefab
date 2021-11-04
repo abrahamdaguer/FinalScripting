@@ -124,5 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2d5e255f303a24383e99aa1947109e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthSO: {fileID: 11400000, guid: 0181f259cd1f245458b808c6dd81f3b0, type: 2}
   force: 10
   lifetime: 0
